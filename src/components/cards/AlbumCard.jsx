@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardBody, CardTitle, CardImg } from 'reactstrap';
 
-const AlbumCard = ({ userId, albumData }) => {
+const AlbumCard = ({ albumData }) => {
   return (
     <div className='col-sm-4 mt-3'>
         <Card>
@@ -12,7 +12,7 @@ const AlbumCard = ({ userId, albumData }) => {
                     {albumData.title}
                 </CardTitle>
                 <div className="d-grid gap-2 d-sm-flex justify-content-sm-center mt-4">
-                    <Link to={`/albums/${userId}/photos/${albumData.id}`}>
+                    <Link to={`/albums/${albumData.userId}/photos/${albumData.id}`}>
                         View Photos
                     </Link>
                 </div>

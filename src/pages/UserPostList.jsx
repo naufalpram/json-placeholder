@@ -37,7 +37,7 @@ const UserPostList = () => {
             <h5>Post List</h5>
         </div>
         {isFetching ? <Spinner /> : (
-            posts.map(post => <PostCard key={post.id} userId={userId} postData={post} />)
+            posts.map(post => <PostCard key={post.id} postData={post} />)
         )}  
     </div>
     </>

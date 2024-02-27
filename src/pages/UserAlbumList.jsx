@@ -38,7 +38,7 @@ const UserAlbumList = () => {
 
             <div className='row'>
                 {isFetching ? <Spinner /> : (
-                    albums.map(album => <AlbumCard key={album.id} userId={userId} albumData={album} />)
+                    albums.map(album => <AlbumCard key={album.id} albumData={album} />)
                 )} 
             </div>
         </div>
